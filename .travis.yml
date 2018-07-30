@@ -1,15 +1,13 @@
-language: java
-jdk:
-- oraclejdk8
-notifications:
-  email: false
-install:
-- chmod +x ./gradlew
-- "./gradlew --info assemble"
-script: "./gradlew --info check"
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
 deploy:
   provider: heroku
-  api_key: 61583999-c042-4585-a29b-8a2f172f1d20
-  app: 'yes'
+  api_key:
+    secure: dAo7qQqPJVozRhPjVdU2zxWX7VvYn4ej1Ea+AurlWk5SDe/nsoUwE3FFD4xRYite1Ot+1QDGT9/hLEKp7uxyouXcccxVA/1u7qua+HilsJTwOicVfySeQsY54+hq4/msUGTWJXmby8ir3HR0XcRdCEZY4el8tzMRfJAR//JCZwvLE7ZMKdfRCeP+9ZGLR2D8wlpcmdUoea8e82xWNoDYiu4MGp3snDbsYpzvTS8wvR3Sz1aOkoF6uqtg5Afh25DncwY9sCJBC3t/wkCHWqMXax+lUJBcE3DE/PTtDzvcpO9Mj9xvSPqm+oaQ7y86V/t00FnY32opAwdk3Bo4EmufxdyfYids3XLM15XdzHH9HUby5EqbkEwMo7oXzzssXdO04a7imN/X71ifcaAW/HSd6HLbXv5JvJL8gWEMzNWk1qe/wx4rahQHSveENp8Ip39D9QCWKUjW60E0hSW7C185jWV4V6F8P4q9AcnTi40ZqVLk/bDVZrCxk6ihYwkGjWmBF8n8EU/fOuvzp7MGev4X4+/qs0QTcxJBcJGx29ExtmNUwjKMU95dpP8n7/4CZ3FZowlPkGvrdj4I54kaPIoz7g71Vo6uy2x5rEG+Ym/oifAaBRoQTQwwIN4WjGLtXMRv5+ReLL2lhVYGHRP+1rJGS/q+1GAJv90pUDibJ6ofDDE=
+  app: Parking-Lot-Application
   on:
     repo: Siu-Keung/Parking-Lot-Application
