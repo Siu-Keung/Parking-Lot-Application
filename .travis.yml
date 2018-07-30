@@ -1,9 +1,15 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 notifications:
   email: false
 install:
-  - chmod +x ./gradlew
-  - ./gradlew --info assemble
-script: ./gradlew --info check
+- chmod +x ./gradlew
+- "./gradlew --info assemble"
+script: "./gradlew --info check"
+deploy:
+  provider: heroku
+  api_key: 61583999-c042-4585-a29b-8a2f172f1d20
+  app: 'yes'
+  on:
+    repo: Siu-Keung/Parking-Lot-Application

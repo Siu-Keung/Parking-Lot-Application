@@ -12,7 +12,7 @@ public class HelloWorldController {
 
     @RequestMapping("/")
     public String sayHelloWorld(){
-        return "欢迎使用";
+        return "888888888888888888888888888888888888888888888888888888888";
     }
 
 }
