@@ -1,17 +1,9 @@
 language: java
-    jdk:
-      - oraclejdk8
-    notifications:
-      email: false
-    install:
-      - chmod +x ./gradlew
-      - ./gradlew --info assemble
-    script: ./gradlew --info check
-    deploy:
-      provider: heroku
-      api_key:
-        secure: OizLAuAsRKGfwJgFiDmRGKQx+epYNKCZuov3Pl37NjRCxkmHteLyqSevFPzKDLHlQ82WdL/O5HnhN3dKy2GNQXPsD19NAa3s1lS3fNDDBMq6mB+EtFU35zDykZMntUx2l0MnXvaYUaQwm7p9PM4q6jWinPYibyPcB2UQIA/mEP68JAnElukCNGo9j2WWESv3wo5gAbzUBOMQVT26LpnEmcCbjvoBuVSk4kTK+Z9fPA+A01XnCSrK1Dqv/VZja9JdpeRYuYkBea4zq72IBTeI4aqmmFv/v+zfFaZVj24K6qN5QN/jQcoMzKG8UNNaPy+DCy4Dsu9sjOds6H3r43mDmDuM0bnwOE7aD6SeS2mFYxDCBDaJYQWc9SUW/1gHFHHw3lw9nelMa5mkuu6EDX/XVcGTZSYVziaR819b9ze/C0ijteo1D8PAJIDTcQM6qGmgtE7JDHfJbrz1rZvI4f7BCHFj7fBkOoJnKH49Mxct0k3wKPfKQzN5CT56mVCpOqqregkzxalrMrzz6F/YK5nfFs4ZMuVpFKSVVu5ms44RQm8tyKzkA2nQzAKFHAIyTV+s9k0kdAtmpYN6BL+uze7VVf4oXjwF6YcyI2uCPVA+o5FyVHoIES49g2hLZvUQ+SqSWeAK3fuGkJjC4PfQemm32dzN0VFHBQLlbN+jQTK4CJs=
-      strategy: git
-      app: Parking-Lot-Application
-      on:
-        repo: Siu-Keung/Parking-Lot-Application
+jdk:
+  - oraclejdk8
+notifications:
+  email: false
+install:
+  - chmod +x ./gradlew
+  - ./gradlew --info assemble
+script: ./gradlew --info check
